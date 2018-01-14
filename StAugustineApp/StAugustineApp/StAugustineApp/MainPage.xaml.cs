@@ -13,5 +13,10 @@ namespace StAugustineApp
 		{
 			InitializeComponent();
 		}
+
+        public void HandleClick(object sender, EventArgs args)
+        {
+
+        }
 	}
 }
