@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{2972D8F6-4D85-484D-A78F-2D09E68FFAC0}</ProjectGuid>
+    <ProjectGuid>{DC1D3CF9-089D-4F80-92A7-603FFCDFC90E}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>StAugustineApp.iOS</RootNamespace>
@@ -134,7 +134,12 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <Import Project="..\StAugustineApp\StAugustineApp.projitems" Label="Shared" Condition="Exists('..\StAugustineApp\StAugustineApp.projitems')" />
+  <ItemGroup>
+    <ProjectReference Include="..\StAugustineApp\StAugustineApp.csproj">
+      <Project>{8d52ef09-a0ee-4b83-bae3-ff5900244504}</Project>
+      <Name>StAugustineApp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

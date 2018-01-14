@@ -7,16 +7,16 @@ using Xamarin.Forms;
 
 namespace StAugustineApp
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
-
-        public void HandleClick(object sender, EventArgs args)
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
-
+            InitializeComponent();
         }
-	}
+
+        private void HandleClicked(object sender, EventArgs e)
+        {
+            this.DisplayAlert("A Title", "You clicked ME!! :D", "Cool");
+        }
+    }
 }

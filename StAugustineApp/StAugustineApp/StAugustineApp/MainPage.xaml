@@ -4,9 +4,10 @@
              xmlns:local="clr-namespace:StAugustineApp"
              x:Class="StAugustineApp.MainPage">
 
+    <Label Text="Heading" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Label Text="Welcome to Xamarin Forms!"/>
-        <Button Text="Test Button" OnClick="HandleClick"/>
+        <Label Text="Welcome to Xamarin!" FontSize="Medium" FontAttributes="Bold"/>
+        <Button Text="Click Me!" Clicked="HandleClicked"/>
     </StackLayout>
 
 </ContentPage>
