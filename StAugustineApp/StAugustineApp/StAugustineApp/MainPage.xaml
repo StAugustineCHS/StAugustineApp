@@ -4,10 +4,14 @@
              xmlns:local="clr-namespace:StAugustineApp"
              x:Class="StAugustineApp.MainPage">
 
-    <Label Text="Heading" VerticalOptions="Start" HorizontalOptions="CenterAndExpand" FontSize="Large"/>
-    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-        <Label Text="Welcome to Xamarin!" FontSize="Medium" FontAttributes="Bold"/>
-        <Button Text="Click Me!" Clicked="HandleClicked"/>
-    </StackLayout>
+   
+
+    <ListView x:Name="listView">
+        <ListView.Header>
+            <StackLayout Padding="10,5,0,5" BackgroundColor="#800000">
+                <Label Text="Welcome Titans!" TextColor="#ffffff"/>
+            </StackLayout>
+        </ListView.Header>
+    </ListView>
 
 </ContentPage>

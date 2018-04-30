@@ -14,9 +14,6 @@ namespace StAugustineApp
             InitializeComponent();
         }
 
-        private void HandleClicked(object sender, EventArgs e)
-        {
-            this.DisplayAlert("A Title", "You clicked ME!! :D", "Cool");
-        }
+       
     }
 }
